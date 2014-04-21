@@ -1,0 +1,17 @@
+{
+  "name": "sqstream",
+  "version": "0.0.1",
+  "description": "SQS streams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evan Solomon",
+  "license": "MIT",
+  "peerDependencies": {
+    "aws-sdk": ">=1.0.0"
+  },
+  "dependencies": {
+    "q": "^1.0.1"
+  }
+}
