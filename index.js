@@ -158,6 +158,8 @@ SqStream.prototype._read = function () {
  * Send pending messages to SQS
  */
 SqStream.prototype.processWrites = function () {
+  if (this._pendingWrites.length === 0) return
+
   this._sendingMessages = true
   var pendingWrites = this._pendingWrites.slice(0)
   this._pendingWrites.length = 0
