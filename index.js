@@ -32,7 +32,7 @@ function SqStream(queueName, sqs) {
   this._pendingWrites = []
   this._sendingMessages = false
 
-  this.on('finish', this.processWrites.bind(this))
+  this.on('prefinish', this.processWrites.bind(this))
 }
 
 /**
